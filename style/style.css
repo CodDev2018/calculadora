@@ -1,0 +1,44 @@
+.container {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.display {
+    width: 100%;
+    padding: 10px;
+    background-color: #222222;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    border-radius: 5px 5px 0 0;
+}
+
+.display span {
+    display: block;
+    height: 18px;
+}
+
+#displayMemory {
+    font-size: 0.8em;
+    color: #aaaaaa;
+}
+
+.buttons {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #999999;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.buttons button {
+    padding: 0;
+    width: 43px;
+    height: 43px;
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+}

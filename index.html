@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <span id="displayMemory"></span>
+            <span id="displayValue">0</span>
+        </div>
+        <div class="buttons">
+            <button onclick="calc.clear()">C</button>
+            <button onclick="calc.cancelEntry()">CE</button>
+            <button onclick="calc.root()">&radic;</button>
+            <button onclick="calc.percentage()">%</button>
+
+            <button onclick="calc.writeANumberOnTheDisplay(7)">7</button>
+            <button onclick="calc.writeANumberOnTheDisplay(8)">8</button>
+            <button onclick="calc.writeANumberOnTheDisplay(9)">9</button>
+            <button onclick="calc.writeAnOperator('/')">/</button>
+
+            <button onclick="calc.writeANumberOnTheDisplay(4)">4</button>
+            <button onclick="calc.writeANumberOnTheDisplay(5)">5</button>
+            <button onclick="calc.writeANumberOnTheDisplay(6)">6</button>
+            <button onclick="calc.writeAnOperator('*')">*</button>
+
+            <button onclick="calc.writeANumberOnTheDisplay(1)">1</button>
+            <button onclick="calc.writeANumberOnTheDisplay(2)">2</button>
+            <button onclick="calc.writeANumberOnTheDisplay(3)">3</button>
+            <button onclick="calc.writeAnOperator('-')">-</button>
+
+            <button onclick="calc.writeANumberOnTheDisplay(0)">0</button>
+            <button onclick="calc.writeDecimalSeparator()">.</button>
+            <button onclick="calc.calculate()">=</button>
+            <button onclick="calc.writeAnOperator('+')">+</button>
+        </div>
+    </div>
+    <script type="module">
+        import calc from './js/calculator.js'
+        window.calc = calc
+    </script>
+</body>
+
+</html>
